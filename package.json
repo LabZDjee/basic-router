@@ -1,0 +1,37 @@
+{
+  "name": "basic-router",
+  "version": "1.0.0",
+  "description": "Tests on SPA with basic navigation router",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --progress --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LabZDjee/basic-router.git"
+  },
+  "keywords": [
+    "SPA",
+    "router",
+    "webpack",
+    "babel"
+  ],
+  "author": "G. Gauthier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LabZDjee/basic-router/issues"
+  },
+  "homepage": "https://github.com/LabZDjee/basic-router#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
+}
