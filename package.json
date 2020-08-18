@@ -1,12 +1,11 @@
 {
   "name": "basic-router",
   "version": "1.0.0",
-  "description": "Tests on SPA with basic navigation router",
+  "description": "Tests on SPA with basic navigation router, packed for IE10 min.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "watch": "webpack --progress --watch"
+    "start": "webpack-dev-server --config webpack.dev.config.js --open",
+    "build": "webpack --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +15,8 @@
     "SPA",
     "router",
     "webpack",
-    "babel"
+    "babel",
+    "postcss"
   ],
   "author": "G. Gauthier",
   "license": "ISC",
@@ -28,10 +28,23 @@
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.1"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "core-js": "^3.6.5"
   }
 }

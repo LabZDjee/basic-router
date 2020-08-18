@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ES Basic Router</title>
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <h1 id="title">ES Basic Router</h1>
+    <p>
+      Taken from Raffaele Pizzari blog: "<a
+        href="https://dev.to/pixari/build-a-very-basic-spa-javascript-router-2k4p">Build a very basic SPA (Single Page
+        App) JavaScript router</a>"
+    </p>
+  </header>
+  <nav>
+    <!-- Little bit tricky code to have a button fire a hidden link, maybe could be simplified later -->
+    <button onclick="switchTo('home');"><span>Home</span></button><a class="h" id="home" href="#/"></a>
+    <button onclick="switchTo('page-1');"><span>Page 1</span></button><a class="h" id="page-1" href="#/page-1"></a>
+    <button onclick="switchTo('page-2');"><span>Page 2</span></button><a class="h" id="page-2" href="#/page-2"></a>
+    <button onclick="switchTo('about-page');"><span>About</span></button><a class="h" id="about-page"
+      href="#/about-page"></a>
+  </nav>
+  <hr />
+  <section id="app"></section>
+  <hr />
+  <section><img src="./assets/route-66.svg" /></section>
+</body>
+
+</html>
